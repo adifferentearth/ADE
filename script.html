@@ -1,129 +1,70 @@
 <!doctype html>
-<html hello>
+<html>
 
 <head>
-	<title> A Different Earth </title>
-
-	<style type="text/css">
+<style>
+	ul {list-style-type:none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color:#E3DFDF;
+		}
 	
-		 body 	{background-image: linear-gradient(to top, black 50%,white 120%),url(earth1.jpg);
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-size: cover;
-				background-position: 50% 50%;
-				background-blend-mode: color-dodge;
-				}
-		
-		div.logo {position:fixed;
-				left:45px;
-				top:50px;}
-				
-		div.narrative {font-family:arial;
-					font-size:20px;
-					color: white;
+	li {float:left;
+		font-family:arial;}
+	
+	li a:hover:not(.active) {background-color:#C1BEBE;
+								color:white;}
+	
+	li a {text-decoration:none;
+		  display:block;
+		  color:black;
+		  text-align:center;
+		  padding:14px 16px;}
+			
+	.active {background-color:#919191;
+			color:white;}
+	
+	div.narrative {font-family:arial;
+					font-size:18px;
+					color: #757575;
 					position: absolute;
-					top:300px;
-					left:270px;
-					padding:20px;
-					padding-top:5px;
-					background: rgba(0,0,0,0.5);
-					border-radius:12px;
-					border:3px solid #333;
-					text-align:justify;
-					width:700px;
-					height:5000px;
+					top: 75%;
+					left: 50%;
+					height: 30%;
+					width: 50%;
+					margin: -15% 0 0 -25%;
 					}
 					
-		.button {display:block;
-				width: 150px;
-				height: 50px;
-				font-size:18px;
-				font-family:arial;
-				font-weight:bold;
-				background: rgba(0,0,0,0.5);
-				border:3px solid #333;
-				color:white;
-				-webkit-transition: width 1s; /* Safari */
-				transition: width 5s;
-				border-radius: 12px;
 		
-				}
-		.button:hover {
-					width:200px;
-					font-size:140%;
-					background-color:#333;
-					color:white;
-					font-weight:bold;
-					border:5px line white;}
-					
-		.button1 {position:fixed;
-				top:175px;
-				left:20px;
-				}
-		.button2 {position:fixed;
-				top:250px;
-				left:20px;}
+	img.center1 {display:block;
+				padding:50px;
+				margin-left:auto;
+				margin-right:auto;
 				
-		.btn {
-				width: 100px;
-				height: 30px;
-				font-size:12px;
-				font-family:arial;
-				background: black;
-				border:3px solid #333;
-				color:white;
-				border-radius: 12px;
-			}
-		.btn:hover {
-					width:110px;
-					background-color:#333;
-					color:white;
-					font-weight:bold;
-					border:2px solid #333;
-					}
-		
-		.bnt1 {position:absolute;
-				top:120px;
-				left:270px;}
-		.bnt2 {position:absolute;
-				top:120px;
-				left:390px;}
-		.bnt3 {position:absolute;
-				top:120px;
-				left:510px;}
-		.bnt4 {position:absolute;
-				top:120px;
-				left:630px;}
-		.bnt5 {position:absolute;
-				top:120px;
-				left:750px;}
-		.bnt6 {position:absolute;
-				top:120px;
-				left:870px;}
-	</style>
-
+</style>
 </head>
 
 <body>
-					<!-- Left Side Bar -->
-	<div class="logo"><a href="index.html"><img src="logo1.png" alt="logo" width="100" height="100"></a></div>
-	<a href="story.html"><button class="button button1">Story</button></a>
-	<a href="joinus.html"><button class="button button2">Join Us</button></a>
+	<ul>				<!-- Left float of menu of top -->
+		<li><a href="index.html">Home</a></li>
+		<li><a class="active" href="script.html">Script</a></li>
+		<li><a href="comic.html">Comic</a></li>
+		<li><a href="characters.html">Characters</a></li>
+		<li><a href="earthmap.html">Earth Map</a></li>
+		<li><a href="forums.html">Forums</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="joinus.html">Join Us</a></li>
+						<!-- Right float of menu of top -->
+		<li style="float:right;"><a href="#login">Login</a></li>
+		<li style="float:right;"><a href="#signup">Sign up</a></li>
+	</ul>
 	
+	<img src="ADECover.jpg" width="400" height="300" class="center1">
 	
-	
-					<!-- Top Side Bar -->
-	<a href="index.html"><button class="btn bnt1">Home Page</button></a>
-	<a href="comic.html"><button class="btn bnt2">Comic</button></a>
-	<a href="http://google.com"><button class="btn bnt3">Characters</button></a>
-	<a href="http://google.com"><button class="btn bnt4">Earth Map</button></a>
-	<a href="http://google.com"><button class="btn bnt5">FAQ</button></a>
-	<a href="http://google.com"><button class="btn bnt6">Chatroom</button></a>
-	
-					<!-- Narrative -->
 	<div class="narrative">
 	
-		<p>This is the script version of the story, we also have a comic version.
+		<p style="color:black;">This is the script version of the story, we also have a comic version.
 		if you want to take a look at that version just click up where it says 
 		"Comic Version" for the alternative experience! However it's important to note
 		that the script version of the story is ahead in the timeline than the comic 
@@ -132,13 +73,14 @@
 		to be ready with the drawings. However we advise all our readers to take a look 
 		at both!</p>
 		
-		<p><span style="color:gold;font-weight:bold;">READING GUIDE!</span></p>
+		<p><span style="color:black;font-weight:bold;">READING GUIDE!</span></p>
+		<span style="color:black;font-weight:bold;"
 		[] - Narration</br>
 		Leo: - Person talking</br>
 		(Leo: Hmm, something isn't right..) - Character thoughts</br>
 		{} - Sound Effects
-		
-		<p><span style="color:gold;">Season 1: Episode 1 - Pilot</span></p>
+		</span>
+		<p><span style="color:black;font-weight:bold;">Season 1: Episode 1 - Pilot</span></p>
 		<p>
 		[A black bird soars through the sky, flying inbetween tree's and into the airspace
 		of the small town Pebbles. The bird creates a quick shadow over Leo's face 
@@ -251,7 +193,7 @@
 		
 
 		
-		
+		<p style="color:red;font-weight:bold;font-size:100px;">More Coming soon(Fridays!)! Thanks for reading!</p>
 
 
 
@@ -260,9 +202,9 @@
 	
 	
 	</div>
-	
+
+
 
 </body>
-
 
 </html>
